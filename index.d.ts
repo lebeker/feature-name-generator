@@ -1,6 +1,10 @@
-import * as featureGenerator from 'src/generator.js';
+import * as featureGenerator from 'src/generator';
 
-class FeatureNameGenerator {
-    public static generate = featureGenerator.generate;
+declare namespace featureNameGenerator {
+    class FeatureNameGenerator {
+        public static generate = featureGenerator.generate;
 
+    }
 }
+
+export = featureNameGenerator.FeatureNameGenerator;
